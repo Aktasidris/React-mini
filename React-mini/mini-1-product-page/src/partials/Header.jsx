@@ -8,7 +8,7 @@ export default function Header() {
           <ul className='flex gap-3 text-md'>
             <li className='hover:underline'>Products</li>
             <li className='hover:underline'>Campain</li>
-            <li className='text-gray-800 hover:underline'>Login</li>
+            <li className='text-gray-700 hover:underline'>Login</li>
           </ul>
         </div>
 
