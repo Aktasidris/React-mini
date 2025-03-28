@@ -1,34 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import CreateTodo from './components/CreateTodo'
+import ListTodo from './components/ListTodo'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [list, setList] = useState([])
+  const [checked,setChecked]=useState(false)
 
+  const onCreateTodo=(newtodo)=>{
+    setList([...list,newtodo])
+
+  }
+  const onDelete=(id)=>{
+    
+    const remainarr=list.filter((item)=>
+      item.id!==id
+    )
+    setList(remainarr)
+  }
+  console.log(list)
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='flex  justify-center aling-middle w-[300px] shadow-lg  mx-auto mt-20 bg-violet-100'>
+      <div className='gap-3  p-4 w-full'>
+          <h1>My To-Do List</h1>
+          <CreateTodo addnewtodo={onCreateTodo}></CreateTodo>
+          <ListTodo listtodo={list} deleteitem={onDelete}></ListTodo>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
