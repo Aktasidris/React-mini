@@ -21,7 +21,7 @@ export default function TodoCreate() {
 
     }
   return (
-    <div className='flex flex-row gap-1'>
+    <div className='flex flex-row gap-1 h-[60px] pt-3'>
         <input value={todoinput} type="text" onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setTodoinput(e.target.value)} className="w-full outline-none bg-white rounded-sm border-b-4 border-lime-800 px-2" placeholder='Write a todo...' />
         <button onClick={addTask} ><IoMdAddCircleOutline className='hover:scale-110 hover:text-white size-6 rounded-full '/></button>
     </div>
