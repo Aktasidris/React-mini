@@ -10,19 +10,32 @@
 Bu repo, React ekosisteminde öğrendiklerimi pekiştirmek amacıyla geliştirdiğim küçük ama öğretici projeleri içeriyor. Her proje kendi klasöründe izole şekilde yapılandırılmıştır.
 
 🧰 Bu Repoda Kullanılan Teknolojiler & Araçlar
+
 Bu projelerde modern web geliştirme teknolojilerinden faydalandım. Aşağıda her bir teknolojinin kısa açıklamalarıyla birlikte bir listesi yer almakta:
 Teknoloji / Araç	Açıklama
+
 ⚛️ React	Bileşen tabanlı UI geliştirme için temel kütüphane
+
 ⚡ Vite	Hızlı geliştirme ve build ortamı
+
 💨 Tailwind CSS	Utility-first yaklaşımıyla stil oluşturma
+
 🎛️ Material UI (MUI)	React için modern, erişilebilir UI bileşenleri
+
 🔌 Axios	HTTP istekleri yapmak için kullanılan kütüphane
+
 🧩 Redux Toolkit	Global state yönetimi için modern Redux aracı
+
 🧭 React Router DOM	Sayfa yönlendirmeleri için router kütüphanesi
+
 💾 localStorage	Tarayıcı taraflı veri saklama çözümü
+
 🔍 ESLint	Kod kalitesi ve standartlarını korumak için linter
+
 🧪 React DevTools	Bileşen yapısını incelemek ve debug için tarayıcı uzantısı
+
 🧬 React Icons	Popüler icon setlerini React projelerine dahil etmek için
+
 🔠 TypeScript Types	Geliştirme sırasında React & DOM tipleri ile daha sağlam kod yazımı (devDependencies kısmında)
 
 💡 Not: Her projede tüm bu teknolojiler kullanılmamış olabilir, ancak genel olarak bu repodaki projelerde aktif olarak yer aldılar.
