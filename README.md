@@ -39,7 +39,7 @@ Aşağıdaki adımları izleyerek herhangi bir projeyi çalıştırabilirsiniz:
 ### 1️⃣ Reponun Klonlanması
 ```bash
 git clone https://github.com/Aktasidris/React-mini.git
-cd react-mini/react-mini
+cd react-mini
 ```
 
 ### 2️⃣ Proje klasörüne geçiş
