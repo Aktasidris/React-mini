@@ -1,4 +1,5 @@
-# ⚛️ React Mini Projects
+# ⚛️+!<img src="https://vitejs.dev/logo.svg" alt="Vite Logo" width="40" height="40"/>
+ React Mini Projects
 
 Bu repo, React ekosisteminde öğrendiklerimi pekiştirmek amacıyla geliştirdiğim küçük ama öğretici projeleri içeriyor. Her proje kendi klasöründe izole şekilde yapılandırılmıştır.
 
