@@ -14,16 +14,19 @@ export default function TodoCreate() {
 
       }
       const payload:TodoType={
-        id,content:todoinput
+        id:Math.floor(Math.random()*9999999),
+        content:todoinput,
+        state:false
       }
       dispatch(createTodo(payload))
+      setTodoinput('')
       
 
     }
   return (
-    <div className='flex flex-row gap-1 h-[60px] pt-3'>
+    <div className='flex flex-row gap-1 h-[60px] pt-3 pe-8'>
         <input value={todoinput} type="text" onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setTodoinput(e.target.value)} className="w-full outline-none bg-white rounded-sm border-b-4 border-lime-800 px-2" placeholder='Write a todo...' />
-        <button onClick={addTask} ><IoMdAddCircleOutline className='hover:scale-110 hover:text-white size-6 rounded-full '/></button>
+        <button onClick={addTask} ><IoMdAddCircleOutline className='hover:scale-110 hover:text-white text-4xl rounded-full '/></button>
     </div>
   )
 }
