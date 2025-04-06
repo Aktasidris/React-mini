@@ -1,4 +1,10 @@
-# ⚛️+<img src="https://vitejs.dev/logo.svg" alt="Vite Logo" width="40" height="40"/>
+<p align="left">
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" width="40"/>
+</p>
+
  React Mini Projects
 
 Bu repo, React ekosisteminde öğrendiklerimi pekiştirmek amacıyla geliştirdiğim küçük ama öğretici projeleri içeriyor. Her proje kendi klasöründe izole şekilde yapılandırılmıştır.
