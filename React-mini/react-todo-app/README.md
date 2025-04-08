@@ -20,4 +20,4 @@ Terminal üzerinden aşağıdaki komutları çalıştırarak uygulamayı başlat
 ```bash
 cd react-todo-app
 npm install
-npm run dev
+npm run dev```
