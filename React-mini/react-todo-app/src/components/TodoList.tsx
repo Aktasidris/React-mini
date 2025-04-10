@@ -1,4 +1,3 @@
-import React from 'react'
 import Todo from './Todo'
 import { useSelector } from 'react-redux'
 import { TodoType } from '../redux/types/todoInitialState'
