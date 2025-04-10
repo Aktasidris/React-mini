@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.form-container {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/038/971/801/non_2x/ai-generated-paper-vintage-background-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
