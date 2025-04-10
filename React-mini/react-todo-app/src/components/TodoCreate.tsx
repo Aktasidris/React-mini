@@ -16,7 +16,7 @@ export default function TodoCreate() {
       const payload:TodoType={
         id:Math.floor(Math.random()*9999999),
         content:todoinput,
-        state:false
+        checked:false
       }
       dispatch(createTodo(payload))
       setTodoinput('')

@@ -15,12 +15,27 @@ export const todosSlice = createSlice({
     createTodo:(state:TodoInitialState,action:PayloadAction<TodoType>)=>{
       state.todos=[...state.todos,action.payload]
 
+    },removeTodoById:(state:TodoInitialState,action:PayloadAction<number>)=>{
+      state.todos=[...state.todos.filter((todo:TodoType)=>todo.id!==action.payload)]
+
+    },updateTodo:(state:TodoInitialState,action:PayloadAction<TodoType>)=>{
+
+      state.todos=[...state.todos.map((todo:TodoType)=>todo.id!==action.payload.id ? todo:action.payload)]
+    },setCheckedState: (
+      state: TodoInitialState,
+      action: PayloadAction<TodoType>
+    ) => {
+      state.todos = state.todos.map((todo: TodoType) =>
+        todo.id === action.payload.id
+          ? { ...todo, checked: action.payload.checked }
+          : todo
+      );
     }
     
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { createTodo} = todosSlice.actions
+export const { createTodo,removeTodoById,updateTodo,setCheckedState} = todosSlice.actions
 
 export default todosSlice.reducer
